@@ -9,6 +9,8 @@
 #'\dontrun{
 #'clowder_load_file(uid ='5d78e1234567891011121f34')
 #'}
+#'
+#' @export
 clowder_load_file <- function(uid = NULL) {
   if (!is.null(getOption("CLOWDER_APIKEY"))) {
     download <- paste0(getOption("CLOWDER_BASEURL"), "/files/", uid, "/blob", "?key=", getOption("CLOWDER_APIKEY"))

@@ -13,6 +13,8 @@
 #'             pass = "pass",
 #'             baseurl = "https://clowder.ncsa.illinois.edu/clowder/api")
 #'}
+#'
+#' @export
 clowder_auth <- function(user = NULL, pass = NULL, apikey = NULL, baseurl){
   check <- function(x) length(x) == 1 && is.character(x)
   setop <- function(x) {

@@ -19,4 +19,5 @@ Load file from clowder uid into memory
 \dontrun{
 clowder_load_file(uid ='5d78e1234567891011121f34')
 }
+
 }
