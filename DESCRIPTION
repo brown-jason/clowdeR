@@ -1,13 +1,16 @@
 Package: clowdeR
-Title: What the Package Does (One Line, Title Case)
+Title: Easily interact with CLOWDER framework 
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Jason",
+           family = "Brown",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "brown.jason@epa.gov")
+Description: Provides functionality that allow users to interact with the clowder api.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    httr,
+    data.table
+RoxygenNote: 6.1.1

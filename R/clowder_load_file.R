@@ -1,12 +1,14 @@
-#' Title
+#' Load file from clowder uid into memory
 #'
-#' @param uid
+#' @param uid character string of the unique clowder uid for the file you want to load
 #'
-#' @return
+#' @return A data.table containing the file loaded from the uid
 #' @import httr
-#' @export
 #'
 #' @examples
+#'\dontrun{
+#'clowder_load_file(uid ='5d78e1234567891011121f34')
+#'}
 clowder_load_file <- function(uid = NULL) {
   if (!is.null(getOption("CLOWDER_APIKEY"))) {
     download <- paste0(getOption("CLOWDER_BASEURL"), "/files/", uid, "/blob", "?key=", getOption("CLOWDER_APIKEY"))

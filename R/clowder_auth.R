@@ -5,9 +5,14 @@
 #' @param apikey optional used preferentially over username/pass
 #' @param baseurl the url used to access clowder api e.g. clowder.ncsa.illinois.edu/clowder/api
 #'
-#' @export
+#' @details use clowder auth to save credentials for use with clowder functions
 #'
 #' @examples
+#'\dontrun{
+#'clowder_auth(user = "exampleuser@examplemail.com",
+#'             pass = "pass",
+#'             baseurl = "https://clowder.ncsa.illinois.edu/clowder/api")
+#'}
 clowder_auth <- function(user = NULL, pass = NULL, apikey = NULL, baseurl){
   check <- function(x) length(x) == 1 && is.character(x)
   setop <- function(x) {
